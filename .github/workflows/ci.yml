@@ -16,7 +16,7 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         node: [22, 24]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3.7.0
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
@@ -40,7 +40,7 @@ jobs:
       run:
         working-directory: vscode
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3.7.0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
